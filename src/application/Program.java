@@ -1,8 +1,5 @@
 package application;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 import model.dao.DaoFactory;
@@ -37,6 +34,9 @@ public class Program {
 		Seller newSeller = sellerDao.findById(5);
 		newSeller.setBaseSalary(4000.00d);
 		sellerDao.update(newSeller);
+		
+		System.out.println("### TEST 5: seller delete ###");
+		sellerDao.delete(8);
 	}
 }
 
